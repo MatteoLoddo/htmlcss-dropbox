@@ -3,9 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-h1{
-    font-size: 4rem;
-}
+
 header{
     background-color: #B4D0E7;
 }
@@ -14,14 +12,34 @@ body{
     /* background-color: #4d4d4d; */
 }
 
+h1{
+    font-size: 4rem;
+}
 h2{
     font-size: 2rem;
 }
 
+h3{
+    font-size: 1.3rem;
+    padding-bottom: 1.5rem;
+}
+
+ul li{
+    list-style: none;
+}
+
+footer{
+    color: #fff;
+    background-color: #000;
+}
+/* VARIABILI */
+:root{
+    --gap:3.5rem;
+}
+
+
 
 /* UTILITY CLASS */
-
-
 
 .d-flex{
     display: flex;
@@ -32,21 +50,61 @@ h2{
 
 }
 
+
 .section{
-    padding: 8rem
+    padding: 6rem
 }
 
 .container-small{
     margin: auto;
-    max-width: 1000px;
-    border: 1px dashed red;
+    max-width: 960px;
+    /* border: 1px dashed red; */
 }
 
 .container{
     margin: auto;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
     max-width: 1200px;
 }
+
+.padding{
+    padding: 4rem 3rem 0rem 0rem ;
+}
+
+
+.bt-sec-style{
+    border: 1px solid black;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    display: inline;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+
+.big{
+    max-width: 70%;
+}
+
+.little{
+    max-width: 30%;
+}
+
+.big-1{
+    max-width: 65%;
+}
+
+.little-1{
+    max-width: 35%;
+}
+
+
 
 /* NAV BAR */
 nav{
@@ -105,7 +163,7 @@ a.bt-head{
 /* HEADER */
 
 .section-head{
-    padding:3rem;
+    padding:4rem;
 }
 
 .contain-head h1{
@@ -120,21 +178,26 @@ a.bt-head{
     border: 1px  dashed red;
 }
 
-
-.head-left{
-    align-content: flex-start;
-    max-width: 30%;
+.cont-left{
+    position: relative;
 }
 
-.head-left p{
+.cont-left p{
     padding-bottom: 2rem;
 }
 
 
-.head-right img{
-    flex-grow: 1;
+.cont-right img{
     max-width: 100%;
 
+}
+
+.svg-head svg{
+    top: 14rem;
+    position: absolute;
+    padding-top: 7rem;
+    display: block;
+    max-width: 50px;
 
 }
 /* MAIN */
@@ -148,12 +211,17 @@ a.bt-head{
     padding-bottom: 2rem;
 }
 .container-col{
-    justify-content: space-between;
-    flex-wrap: wrap;
+    gap: 2rem;
     width: 100%;
 }
 
+.card{
+    border: 1px solid gray;
+}
+
 .title-column{
+    align-items: center;
+    justify-content: center;
     padding: 0.5rem 0rem;
     border-bottom: 1px solid gray;
 }
@@ -161,21 +229,31 @@ a.bt-head{
     display:block;
     text-align: center;
 }
+.title-column svg{   
+    padding: 3px;
+    max-width: 1.3rem;
+}
 
 .mini-cont{
     padding-bottom: 2rem;
+}
+
+.mini-cont svg{
+    max-width: 1rem;
+
 }
 .mini-cont span{
     padding-bottom: 0.5rem;
     display: block;
 }
 
+
 .mini-cont .name{
     font-weight: bolder;
     font-size: 1.5rem;
 }
 
-.mini-cont  .price{
+.mini-cont .price{
     font-weight: bold;
 }
 
@@ -186,13 +264,10 @@ a.bt-head{
 
 .mini-cont ul li{
     padding: 1rem 0rem;
-    margin-left: 1rem;
 }
 
 
 .col{
-    
-    border: 1px solid gray;
     min-height: 50px;
 }
 
@@ -203,12 +278,13 @@ a.bt-head{
     padding: 2rem;
 }
 .col-small{
-    flex-basis: calc(100% / 3 - 2.5rem);
+    flex-grow: 1;
+    flex-basis: calc(100% / 3 - 2rem)
 }
 
 .col-big{
     margin-top: 3.5rem;
-    flex-basis: calc(100%/2 - 1rem);
+    flex-basis: calc(100%/2);
 }
 
 .cont-col{
@@ -223,4 +299,101 @@ a.bt-head{
     min-height: 100px;
     background-color: green;
 }
+
+.group{
+    gap: var(--gap);
+}
+
+
+.group .cont-left h3{
+    padding-bottom:1rem;
+}
+
+a.bt-sec-style{
+    color: #000;
+    text-decoration: none;
+}
+
+.col img{
+    max-width: 100%;
+}
+.left-item{
+    max-width: 50%;
+}
+
+.bt-banner{
+    padding-top: 9px;
+
+}
+
+.frequent-q div ul li{
+    padding: 2rem  0rem;
+    font-weight: bold;
+    justify-content: space-between;
+    border-top: 1px solid black;
+}
+
+.frequent-q div ul li:last-child{
+    border-bottom: 1px solid black;
+}
+
+.fa.fa-chevron-down{
+    font-size: 1rem;
+    padding-right: 2rem;
+}
+
+footer a,footer li{
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.hr-foot{
+    
+    max-width: 10%;
+    color: #fff;
+}
+
+li svg{
+    color: blue;
+}
+
+.section.banner-2{
+    background-color: #B4D0E7;
+    color:#61082B;
+}
+
+.banner-2 h2{
+    padding-bottom: 0;
+}
+
+.banner-1,.banner-2{
+    padding: 8rem;
+}
+
+
+.square-big{
+    background-color: #0061FF;
+    min-width: 100%;
+    height: calc()
+}
+
+.square{
+    flex-basis: calc(100% / 2);
+    height: calc(100% / 2);
+    background-color: #0061FF;
+    border: 1px solid black;
+}
+.section-loghi .box{
+    flex-grow: 1;
+}
+.section-loghi .box-4{
+    flex-wrap: wrap;
+    flex-basis: calc(100% / 3);
+}
+
+
+
+
 
