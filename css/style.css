@@ -32,6 +32,11 @@ footer{
     color: #fff;
     background-color: #000;
 }
+
+li svg{
+    color: blue;
+}
+
 /* VARIABILI */
 :root{
     --gap:3.5rem;
@@ -64,7 +69,7 @@ footer{
 .container{
     margin: auto;
     /* border: 1px dashed black; */
-    max-width: 1000px;
+    max-width: 1200px;
 }
 
 .padding{
@@ -104,10 +109,14 @@ footer{
     max-width: 35%;
 }
 
+.flex-basis-0{
+    flex-basis: 0;
+}
 
 
 /* NAV BAR */
 nav{
+    padding: 0.7rem  0rem;
     z-index: 1;
     left: 0;
     right: 0;
@@ -142,13 +151,13 @@ nav{
 }
 
 a.bt{
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: #fff;
     text-decoration: none;
 }
 a.bt.bt-nav{
     margin-right: 1rem;
-    padding: 0.5rem
+    padding: 0.5rem 1rem
 
 }
 a.bt-head{
@@ -188,14 +197,14 @@ a.bt-head{
     max-width: 100%;;
 }
 .cont-right img{
-    max-width: 115%;
+    max-width: 100%;
 
 }
 
 .svg-head svg{
-    padding-top: 4rem;
+    padding-top: 5rem;
     display: block;
-    max-width: 30px;
+    max-width: 40px;
 
 }
 /* MAIN */
@@ -236,7 +245,8 @@ a.bt-head{
     padding-bottom: 2rem;
 }
 
-.mini-cont svg{
+.mini-cont li svg{
+    margin: 2px 2px;
     max-width: 1rem;
 
 }
@@ -261,7 +271,12 @@ a.bt-head{
 }
 
 .mini-cont ul li{
+    align-items: flex-start;
     padding: 1rem 0rem;
+}
+
+.mini-cont ul li div{
+    padding-left: 0.5rem;
 }
 
 
@@ -277,7 +292,7 @@ a.bt-head{
 }
 .col-small{
     flex-grow: 1;
-    flex-basis: calc(100% / 3 - 2rem)
+    flex-basis: calc(100% / 3 - 2rem);
 }
 
 .col-big{
@@ -353,9 +368,6 @@ footer a,footer li{
     color: #fff;
 }
 
-li svg{
-    color: blue;
-}
 
 .section.banner-2{
     background-color: #B4D0E7;
@@ -378,8 +390,8 @@ li svg{
 }
 
 .square{
-    flex-basis: calc(100% / 2);
-    height: calc(100% / 2);
+    width: 50%;
+    aspect-ratio: 1/1;
     background-color: #0061FF;
     border: 1px solid black;
 }
