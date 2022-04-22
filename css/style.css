@@ -40,7 +40,19 @@ li svg{
 /* VARIABILI */
 :root{
     --gap:3.5rem;
+    --bg-color-ASU:#61082B;
+    --bg-color-Topps:#FF1C1C;
+    --bg-color-world:#D5001F;
+    --bg-color-designit:#A2D39B;
+    --bg-color-clear-channel:#FFD830;
+    --bg-color-hearst:#B4D0E7;
+    --bg-color-blue-lonely:#0D2481;
+    --bg-color-blue-florida:#0093CE;
+
+
 }
+
+
 
 
 
@@ -209,6 +221,7 @@ a.bt-head{
 }
 /* MAIN */
 
+
 .input-radio{
     gap: 1rem;
     padding-bottom: 2rem;
@@ -363,7 +376,7 @@ footer a,footer li{
 }
 
 .hr-foot{
-    
+    margin: 6rem 0rem 2rem 0rem;
     max-width: 10%;
     color: #fff;
 }
@@ -383,25 +396,99 @@ footer a,footer li{
 }
 
 
-.square-big{
-    background-color: #0061FF;
-    min-width: 100%;
-    min-height:
-}
 
 .square{
     width: 50%;
     aspect-ratio: 1/1;
-    background-color: #0061FF;
-    border: 1px solid black;
+    
+    
+
 }
-.section-loghi .box{
-    flex-grow: 1;
+
+.square-big{
+    aspect-ratio: 1/1;
+    overflow: auto;
+    padding:4rem;
 }
-.section-loghi .box-4{
+
+.box{
+    aspect-ratio: 1/1;
     flex-wrap: wrap;
-    flex-basis: calc(100% / 3);
+    flex-basis: 0;
+    flex-grow: 1;
+    
 }
+
+
+.square img{
+    filter: invert();
+    object-fit: contain;
+    max-width: 50%;
+    position: relative;
+    top: 50%;
+    left:50%;
+    transform: translate(-50% , -50%) ;
+
+}
+
+.association-logo{
+    max-width: 50%;
+}
+
+.association-logo img{
+    max-width: 100%;
+}
+
+.select-lang{
+    color:gray;
+}
+
+.select-lang .world{
+    margin-right: 10px;
+    max-width: 1rem ;
+}
+
+.select-lang .up{
+    margin-left: 5px;
+    max-width: 0.8rem;
+}
+
+
+
+/* BACKGROUND COLOR SQUARE */
+
+.designit{
+    background-color: var(--bg-color-designit);
+}
+
+.arizona{
+    background-color: var(--bg-color-ASU);
+}
+
+.florida{
+    background-color: var(--bg-color-blue-florida);
+}
+
+.topps{
+    background-color: var(--bg-color-Topps);
+}
+
+.world{
+    background-color: var(--bg-color-world);
+}
+
+.hearst{
+    background-color: var(--bg-color-hearst);
+}
+
+.planet{
+    background-color: var(--bg-color-blue-lonely);
+}
+
+.clear-channel{
+    background-color: var(--bg-color-clear-channel);
+}
+
 
 
 
